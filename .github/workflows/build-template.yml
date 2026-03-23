@@ -42,7 +42,9 @@ jobs:
         env:
           FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
         run: |
-          echo "Uploading storefront template to Fly volume..."
+          echo "Removing old template..."
+          flyctl ssh console --app amboras-orchestrator -C "rm -f /app/workspaces/storefront-template.tar.gz" || true
+          echo "Uploading new template..."
           flyctl ssh sftp shell --app amboras-orchestrator <<EOF
           put storefront-template.tar.gz /app/workspaces/storefront-template.tar.gz
           EOF
