@@ -34,13 +34,13 @@ export default function HomePage() {
           {/* Text Content */}
           <div className="space-y-6 animate-fade-in-up">
             <p className="text-sm uppercase tracking-[0.2em] text-muted-foreground">
-              New Collection
+              🎃 Halloween Collection
             </p>
             <h1 className="text-display font-heading font-semibold text-balance">
-              Elevate Your Everyday
+              Dare to Be Wicked
             </h1>
             <p className="text-lg text-muted-foreground max-w-md leading-relaxed">
-              Thoughtfully designed products that bring beauty and function to your daily rituals.
+              Things that go bump in the night — and look good doing it. Shop our hauntingly good Halloween picks before they vanish.
             </p>
             <div className="flex flex-wrap gap-4 pt-2">
               <Link
@@ -48,7 +48,7 @@ export default function HomePage() {
                 className="btn-brand-primary inline-flex items-center gap-2 px-8 py-3.5 text-sm font-semibold uppercase tracking-wide transition-opacity"
                 prefetch={true}
               >
-                Shop Now
+                Shop the Collection
                 <ArrowRight className="h-4 w-4" />
               </Link>
               <Link
